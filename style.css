@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    background-color: blue;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    color: #ababab;
+    border: 2px solid green;
+    background-color: purple;
+}
+
+#skills{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid gold;
+    padding: 30px 0;
+    background-color: silver;
+}
+
+#project{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid purple;
+    padding: 50px 0;
+    background-color: gold;
+}
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid pblue;
+    margin-top: 30px;
+    background-color: brown;
+}
+
+.copyright{
+    width: 100%;
+    height: 100vh;
+    border: 2ps solid navy;
+    width: 100%;
+    text-align: center;
+    padding: 25px 2px;
+    background-color: darkcyan;
+    font-weight: 300;
+    margin-top:50px;
+}
+
+ /* mobile */
+
+ @media (max-width: 480px) {
+    #header{
+        width: 100%;
+        height: 100vh;
+        border: 2px solid red;
+        background-color: red;
+    }
+    
+    #about{
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        color: #ababab;
+        border: 2px solid green;
+        background-color: green;
+    }
+    
+    #skills{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid gold;
+        padding: 30px 0;
+        background-color: gold;
+    }
+    
+    #project{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid purple;
+        padding: 50px 0;
+        background-color: purple;
+    }
+    
+    #contact{
+        width: 100%;
+        height: 100vh;
+        border: 2px solid pblue;
+        margin-top: 30px;
+        background-color: blanchedalmond;
+    }
+    
+    .copyright{
+        width: 100%;
+        height: 100vh;
+        border: 2ps solid navajowhite;
+        width: 100%;
+        text-align: center;
+        padding: 25px 2px;
+        background-color: #262626;
+        font-weight: 300;
+        margin-top:50px;
+    }
+ }
+    /* Tab */
+    @media (min-width: 481px) and (max-width: 767px){
+    #header{
+        width: 100%;
+        height: 100vh;
+        border: 2px solid red;
+        background-color: green;
+    }
+    
+    #about{
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        color: #ababab;
+        border: 2px solid green;
+        background-color: plum;
+    }
+    
+    #skills{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid gold;
+        padding: 30px 0;
+        background-color: darkolivegreen;
+    }
+    
+    #project{
+        width: 100%;
+        height: 100vh;
+        border: 1px solid purple;
+        padding: 50px 0;
+        background-color: darkkhaki;
+    }
+    
+    #contact{
+        width: 100%;
+        height: 100vh;
+        border: 2px solid pblue;
+        margin-top: 30px;
+        background-color: slateblue;
+    }
+    
+    .copyright{
+        width: 100%;
+        height: 100vh;
+        border: 2ps solid sienna;
+        width: 100%;
+        text-align: center;
+        padding: 25px 2px;
+        background-color: royalblue;
+        font-weight: 300;
+        margin-top:50px;
+    }
+}
+
