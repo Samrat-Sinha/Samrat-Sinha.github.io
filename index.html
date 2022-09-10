@@ -6,13 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/ae0a65325d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        <h1>Hi, I'm <span>Samrat</span><br>Sinha From India</h1>
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skill</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>JAVA BACKEND DEVELOPER</p>
+                <h1>Hi, I'm <span>Samrat</span><br>Sinha From India</h1>
+                <a href="https://drive.google.com/file/d/195ZWaDzUdZfrFGLcu5PglTu5veQz30cL/view" class="btn btn2"><i class="fa-solid fa-file"></i> Curriculum Vitae </a>                 
+            </div>
+        </div>
     </div>
-    <div id="about">
-        <h1>about</h1>
+
+    <div id ="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/profile pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tille">About Me</h1>
+                    <p class="details">Innovative optimized solution seeker. Excited to be
+                        at the deployment phase of my new career as a Java
+                        Developer. Technically proficient and analytical
+                        problem solver with calm and focused demeanor.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skill')">Soft-Skills</p>
+
+             
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Full Stack Java Developer at Masai School, Bangalore</li>
+
+                            <li><span>2018</span><br>B.Tech from BITM,Santinektan</li>
+
+                            <li><span>2014</span><br>ISC from St Joseph & Mary School, New Alipore, Kolkata</li> 
+
+                            <li><span>2012</span><br>ICSE from St Paul Day School, Budge Budge, Kolkata</li> 
+                            
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skill">
+                        <ul>
+                            <li><span></span><br><i class="fa-solid fa-bullseye"></i>  &nbsp Team Work</li>
+
+                            <li><span></span><br><i class="fa-solid fa-bullseye"></i>  &nbsp Remote Work and Online Collaboration</li>
+
+                            <li><span></span><br><i class="fa-solid fa-bullseye"></i>  &nbsp Adaptablility.</li>
+                            
+                            <li><span></span><br><i class="fa-solid fa-bullseye"></i>  &nbsp Problem Solver Attitude.</li>
+                            
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
     </div>
     <div id="skills">
         <h1>skill</h1>
@@ -28,3 +92,32 @@
     </div>
 </body>
 </html>
+
+
+<script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    
+    <script>
+    
+    let sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    
+    
+    </script>
