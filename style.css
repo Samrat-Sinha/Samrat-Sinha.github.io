@@ -194,7 +194,7 @@ nav ul li a:hover::after{
 
 }
 
-/* Skills */
+/* Tech Stack */
 
 #skills{
     padding: 30px 0;
@@ -236,6 +236,121 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+/* Skills */
+
+.inne{
+    padding-top: 20px;
+}
+.heade{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.heade::after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+height: 4px;
+width: 100px;
+background-color: #2ecc71;
+}
+
+.containe{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-bo{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-bo:hover > .skill-titl::after , .skill-bo:hover > .skill-titl::before{
+width:35px ;
+}
+
+.skill-bo:hover .imgg{
+    transform: translateY(-10px);
+}
+
+.skill-titl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-titl::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right:50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #2ecc71;
+  transition: .5s;
+}
+
+.skill-titl::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: .5s;
+  }
+
+.imgg{
+ width: 90px;
+ height: 90px;
+ position: relative;
+ border-radius: 45px;
+ background-color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: .5s;
+}
+
+.imgg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background:rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+
+.skill-titl h3{
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.skill-ico{
+    width: 50px;
+    z-index: 2;
+
+}
 /* * -------------- css for small screen ---------------  */
 
 
@@ -312,6 +427,16 @@ nav .fa-solid{
     
         border: 1px solid gold;
     }
+
+
+/* skills */
+
+.containe{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
 
 
 #project{
