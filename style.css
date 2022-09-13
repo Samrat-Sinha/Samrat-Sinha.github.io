@@ -242,10 +242,14 @@ nav ul li a:hover::after{
     padding-top: 20px;
 }
 .heade{
+    font-size: 30px;
+    font-weight: 600;
     text-align: center;
     color: #fff;
     padding: 1rem;
     position: relative;
+    margin-bottom: 50px;
+    text-decoration:underline;
 }
 
 .heade::after{
@@ -256,7 +260,7 @@ left: 50%;
 transform: translateX(-50%);
 height: 4px;
 width: 100px;
-background-color: #2ecc71;
+/* background-color: #2ecc71; */
 }
 
 .containe{
@@ -301,7 +305,7 @@ width:35px ;
   width: 0;
   height: 4px;
   border-radius: 2px 0 0 2px;
-  background-color: #2ecc71;
+  background-color: #ff004f;
   transition: .5s;
 }
 
@@ -313,7 +317,7 @@ width:35px ;
     width: 0;
     height: 4px;
     border-radius: 0 2px 2px 0;
-    background-color: #2ecc71;
+    background-color: #ff004f;;
     transition: .5s;
   }
 
@@ -342,6 +346,7 @@ width:35px ;
 
 
 .skill-titl h3{
+    padding-top: 100px;
     color: #fff;
     margin-top: 0.5rem;
 }
@@ -349,8 +354,12 @@ width:35px ;
 .skill-ico{
     width: 50px;
     z-index: 2;
-
-}
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius:51% ;
+    }
 /* * -------------- css for small screen ---------------  */
 
 
@@ -433,6 +442,7 @@ nav .fa-solid{
 
 .containe{
     grid-template-columns: repeat(2,1fr);
+    padding: 2rem 50px;
 }
 
 
@@ -484,6 +494,8 @@ nav .fa-solid{
 
 
  @media (max-width: 480px) {
+
+   
        
     #project{
         width: 100%;
@@ -521,7 +533,7 @@ nav .fa-solid{
         border: 2px solid red;
         background-color: green;
     }
-    
+   
     #about{
         width: 100%;
         height: 100vh;
@@ -539,6 +551,12 @@ nav .fa-solid{
         background-color: darkolivegreen;
     }
     
+
+   
+    
+    
+
+
     #project{
         width: 100%;
         height: 100vh;
@@ -568,5 +586,14 @@ nav .fa-solid{
     }
 } 
 
+}
+}
+
+
+@media (max-width: 480px) {
+
+.containe{
+    grid-template-columns: repeat(1,1fr);
+    
 }
 }
