@@ -287,7 +287,6 @@ font-family: 'Roboto Serif', serif;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    color: #fff;
     padding: 1rem;
     position: relative;
     /* margin-bottom: 20px; */
@@ -318,8 +317,14 @@ width: 100px;
 
 .skill-bo{
     padding: 1rem;
-    color: #ddd;
+    color: #ffffff;
+    font-weight: bolder;
     cursor: pointer;
+}
+
+.skill-bo p{
+    background-color:rgba(0,0,0,0.7) ;
+    padding: 4px;
 }
 
 .skill-bo:hover > .skill-titl::after , .skill-bo:hover > .skill-titl::before{
@@ -369,7 +374,8 @@ width:35px ;
 
 .skill-titl h3{
     padding-top: 100px;
-    color: #fff;
+    /* color: #fff; */
+    color: palegoldenrod;
     margin-top: 0.5rem;
 }
 
