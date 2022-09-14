@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -76,7 +77,16 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #D6ED17FF;
+    color:greenyellow;
+    font-weight: bolder;
+    font-size: 118px;
+    font-weight: bolder;
+text-shadow: 5px 8px green;
+font-family: 'Arizonia', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Water Brush', cursive;
 }
 
 .btn{
