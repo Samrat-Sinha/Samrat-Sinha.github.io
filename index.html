@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+  rel="stylesheet"
+
+/>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Bebas+Neue&family=Caveat:wght@700&family=Poppins:ital,wght@1,300&family=Water+Brush&display=swap" rel="stylesheet">
-<!-- <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Bebas+Neue&family=Poppins:ital,wght@1,300&family=Water+Brush&display=swap" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Montserrat:wght@600&family=Poppins:wght@300&family=Roboto+Serif:ital,opsz@1,8..144&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Cormorant+SC&family=Montserrat:wght@600&family=Poppins:wght@300&family=Roboto+Serif:ital,opsz@1,8..144&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ae0a65325d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -32,7 +34,7 @@
             <div class="header-text">
                 <p>JAVA BACKEND DEVELOPER</p>
                 <h1>Hi, I'm <span>&nbsp;Samrat</span><br>Sinha From India</h1>
-                <a href="https://drive.google.com/file/d/195ZWaDzUdZfrFGLcu5PglTu5veQz30cL/view" class="btn btn2"><i class="fa-solid fa-file"></i> Curriculum Vitae </a>                 
+                <a href="./Images/SAMRAT_SINHA_Resume.pdf" class="btn btn2" download><i class="fa-solid fa-file"></i> Curriculum Vitae </a>                 
             </div>
         </div>
     </div>
@@ -46,7 +48,7 @@
                     <img src="./Images/profile pic.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title" id="h11">&nbsp;&nbsp;&nbsp;About Me&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="sub-title" id="h11">&nbsp;About Me&nbsp;</h1>
                     <p class="details">Innovative optimized solution seeker. Excited to be
                         at the deployment phase of my new career as a Java
                         Developer. Technically proficient and analytical
@@ -90,7 +92,7 @@
 
     <div id="TechStack">
         <div class = "container">
-            <h1 class="sub-title">&nbsp;&nbsp;&nbsp;Tech-Stack&nbsp;&nbsp;&nbsp;</h1>
+            <h1 class="sub-title">&nbsp;Tech-Stack&nbsp;</h1>
             <div class = "skills-list">
                 <div>
                     <i class="fa-brands fa-java"></i>
@@ -124,7 +126,7 @@
     
     <div id="skil">
         <div class="heade">
-            <h1 class="sub-title">&nbsp;&nbsp;&nbsp;Skill-Set&nbsp;&nbsp;&nbsp;</h1>
+            <h1 class="sub-title">&nbsp;Skill-Set&nbsp;</h1>
         </div>
        <div class="containe">
         <div class="skill-bo">
@@ -144,7 +146,7 @@
               </div>
               <h3>Back-End Skill</h3>
             </div>
-            <p>Having skill in Java Developement with an understanding of how to write clean and efficient code and collaborative with teams and also have a keenness to learn new tools. Primarily using java 8 with having a knowledge of tools and Databases such as Java and SQL server </p>
+            <p>Having skill in Java Developement with an understanding of how to write clean and efficient code  and also have a keenness to learn new tools. Primarily using java 8 with having a knowledge of tools and Databases such as Java and SQL server </p>
           </div>
 
           <div class="skill-bo">
@@ -163,7 +165,7 @@
 
     <div id="project">
         <div class="container">
-            <h1 class="sub-title">&nbsp;&nbsp;&nbsp;My Project&nbsp;&nbsp;&nbsp;</h1>
+            <h1 id="pp1" class="sub-title">&nbsp;My Project&nbsp;</h1>
             <div class="work-list">
                 <!-----------Project-1-------->
                 <div class="work">
@@ -189,12 +191,21 @@
         </div>
     </div>
 
+    <!-- Git Calender -->
+    <div class="container">
+        <h1 class="sub-title" id="gt1">&nbsp;GitHub Calendar&nbsp;</h1>
+    </div>
+    <div class="calendar" id="git_cal">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+    </div>
+    
 
     <!-- Contact -->
 
     <div id="contact">
         <div class="container">
-            <h1 class="sub-title" id="ch1">&nbsp;&nbsp;&nbsp;&nbsp;Contacts&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <h1 class="sub-title" id="ch1">&nbsp;Contacts&nbsp;</h1>
             <div class="social-icons">
                 <a href="https://github.com/Samrat-Sinha"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/samrat--sinha/"><i class="fa-brands fa-linkedin"></i></a>
@@ -242,6 +253,28 @@
     function closemenu(){
         sidemeu.style.right = "-200px";
     }
-    
-    
     </script>
+
+
+    <!-- Git Calender script -->
+
+
+        <!-- Include the library. -->
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+    <script>
+        GitHubCalendar(".calendar", "Samrat-Sinha");
+    
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "Samrat-Sinha", { responsive: true });
+    
+        // Use a proxy
+        GitHubCalendar(".calendar", "Samrat-Sinha", {
+           proxy (username) {
+             return fetch(`https://your-proxy.com/github?user=${Samrat-Sinha}`)
+           }
+        }).then(r => r.text())
+    </script>
+
