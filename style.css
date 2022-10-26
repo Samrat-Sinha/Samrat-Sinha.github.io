@@ -231,8 +231,9 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
+    text-align: justify;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
