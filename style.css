@@ -1123,6 +1123,16 @@ footer span a:hover{
         line-height: 38px;
     }
 
+    .work img{
+        width: 100%;
+        height: 460px;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+    }
+
+
+
     /* -------------git calender --------------*/
 
     #git_cal{
