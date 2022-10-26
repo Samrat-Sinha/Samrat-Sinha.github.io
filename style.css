@@ -560,6 +560,7 @@ section .title::after{
     color:#fff;
     background: #111;
     padding-bottom: 200px;
+    padding-top: 100px;
   
 }
 .stats .title::before,
@@ -573,6 +574,7 @@ section .title::after{
 }
 
 .gitstats{
+    padding-top: 100px;
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
 ;
@@ -814,6 +816,8 @@ p img{
 #git_cal{
     width: 1300px;
     margin-left:-100px;
+    padding: 5px;
+    margin-top: 100px;
 }
 
 #gt1{
