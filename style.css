@@ -607,8 +607,8 @@ p img{
 }
 
 :root {
-    --color-calendar-graph-day-bg: grey;
-    --color-calendar-graph-day-L1-bg: #39dd34;
+    --color-calendar-graph-day-bg: rgb(62, 62, 61);
+    --color-calendar-graph-day-L1-bg: #1fff17;
     --color-calendar-graph-day-L2-bg: #45a045;
     --color-calendar-graph-day-L3-bg: #047526;
     --color-calendar-graph-day-L4-bg: #0a4208;
@@ -721,7 +721,7 @@ p img{
       line-height: 1.3em;
       font-size: 24px;
       display: block;
-      color: #333;
+      color: red;
   }
   
   .calendar img.spinner {
