@@ -1135,6 +1135,87 @@ footer span a:hover{
         text-align: end;
     }
 
+
+    /* project  */
+
+    #projects .item{
+        flex-direction: column;
+    }
+
+     #projects .item .left{
+        width:100%;
+    }
+
+     #projects .item .right{ 
+        width: 90%;
+        margin-left: 0 auto;
+        margin-top: -150px;
+        margin-left: 5px;
+        /* height: 100px; */
+    }
+
+    
+
+    
+.buttons{
+    margin-top: 3rems;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 4px;
+    margin-left: -10px;
+}
+
+.primary-btn{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    /* padding: 0.1em 0.1em; */
+    border-radius: 50px;
+
+}
+
+
+
+
+#projects .item .right .buttons .primary-btn{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(0.7em - 4px) calc(1.2rem - 4px);
+
+}
+
+#projects .item .right .buttons .primary-btn svg{
+    width: 5px;
+
+}
+
+
+     #projects .item:nth-child(even){
+        flex-direction: column;
+    }
+
+    #projects .item:nth-child(even) .left{
+        margin-left: 0;
+    }
+    
+    #projects .item .right .project-title{
+        font-size: 12px;
+        /* font-family: 'Montserrat' , sans-serif; */
+        margin-bottom: 2rem;
+        font-style: italic;
+        font-style: ;
+    }
+    
+    #projects .item .right .project-sub-title{
+        font-size: 16px;
+        font-weight: bold;
+        /* font-family: 'Montserrat' , sans-serif; */
+        margin-bottom: 1rem;
+    }
     
 }
 
