@@ -41,3 +41,9 @@ $(document).ready(function(){
         loop: true
     });
 });
+
+function openNewWindow(){
+    window.open('https://drive.google.com/file/d/1QeUr0kE4-p5grzdzho53wLmz-tspHhMq/view?usp=sharing');
+}
+
+

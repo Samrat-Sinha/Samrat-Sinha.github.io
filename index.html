@@ -25,12 +25,13 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#tools" class="menu-btn">Tools</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#project" class="menu-btn">Project</a></li>
+                <li><a href="#projects" class="menu-btn">Project</a></li>
                 <li><a href="#stats" class="menu-btn">Github Statistics</a></li>
                 <li><a href="#cal" class="menu-btn">Github Calender</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a target="_blank" href="https://drive.google.com/file/d/1QeUr0kE4-p5grzdzho53wLmz-tspHhMq/view?usp=sharing" class="menu-btn">Resume</a></li>
+                <li><a href="Resume/fw18_0396-Samrat-Sinha-Resume.pdf" download onclick="openNewWindow()" target="_blank" class="menu-btn" >Resume</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -45,7 +46,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Samrat Sinha</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="./Images/Samrat Sinha Resume.pdf" download></i> Resume </a>
+                <a href="Resume/fw18_0396-Samrat-Sinha-Resume.pdf" download onclick="openNewWindow()" target="_blank"></i> Resume </a>
             </div>
         </div>
     </section>
@@ -130,6 +131,42 @@
     </section>
 
 
+    <!-- Tools Sections -->
+
+    <section class="tools" id="tools">
+        <div class="max-width">
+            <h2 class="title">My Tools</h2>
+            <div class="skills-list">
+                <div>
+                  <img class="toolimg" src="Images/vscode.jpg" alt="Visual Studio Code icon">
+                  <h2>Virtual Studio Code</h2>
+                </div>
+                <div>
+                  <img class="toolimg" src="Images/sts.jpg" alt="ECLIPSE">
+                  <h2>SpringToolSuite</h2>
+                </div>
+                <div>
+                  <img class="toolimg" src="Images/postman.jpg" alt="POSTMAN">
+                  <h2>Postman</h2>
+                </div>
+                <div>
+                  <img class="toolimg" src="Images/maven.jpg" alt="MAVEN">
+                  <h2>Maven</h2>
+                </div>
+                <div>
+                  <img class="toolimg" src="Images/github.jpg" alt="GITHUB">
+                  <h2>Github</h2>
+                </div>
+                <div>
+                  <img class="toolimg" src="Images/swagger-icon.png" alt="SWAGGER">
+                  <h2>Swagger</h2>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
@@ -161,53 +198,113 @@
         </div>
     </section>
 
-
+    
     <!-- Project Section  -->
 
-    <section class="project" id="project">
+    <section id="projects" class="projects">
         <div class="max-width">
             <h2 class="title">My Projects</h2>
-           
-            <div class="work-list">
-                <!-----------Project-1-------->
-                <div class="work">
-                    <img src="./Images/work-1.png">
-                    <div class="layer">
-                        <h2 class="h2">Apollo 24|7  | Clone</h2>
-                        <p class="p">Apollo 24|7 is a digital healthcare website having facilities like Online Doctor Consultations, Online Pharmacy, Diagnostic Test at Home and CIRCLE - Apollo 24|7,s Premium Healthcare Program.</p>
-                        <p class="mat">HTML&nbsp;|&nbsp;CSS&nbsp;|&nbsp;JAVASCRIPT&nbsp;|&nbsp;LOCAL STORAGE&nbsp;|&nbsp;DOM&nbsp;</p>    
-                        <a href="https://calm-alpaca-414005.netlify.app/">Website  <i class="fa-solid fa-up-right-from-square"></i></a>
-                           <a href="https://github.com/ahmad-DS/WEB18-APOLLO24X7">Code <i class="fa-solid fa-code"></i></a>
+            <div class="all-items">
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="./Images/work-1.png" alt="project">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h4 class="project-title">Apollo 24/7  | Clone</h2></h4>
+                        
+                        <p class="project-desc">Apollo 24|7 is a digital healthcare website having facilities like Online Doctor Consultations, Online Pharmacy, Diagnostic Test at Home and CIRCLE - Apollo 24|7,s Premium Healthcare Program.</p>
+                        <h6 class="project-sub-title">HTML&nbsp;|&nbsp;CSS&nbsp;|&nbsp;JAVASCRIPT&nbsp;|&nbsp;LOCAL STORAGE&nbsp;|&nbsp;DOM&nbsp;</h6>
+                        <div class="buttons">
+                            <a href="https://github.com/ahmad-DS/WEB18-APOLLO24X7" target="_blank" class="primary-btn">Github<i class="fa-solid fa-code"></i></a>
+                            <a href="https://calm-alpaca-414005.netlify.app/" target="_blank" class="primary-btn outline external-link"><span>Preview</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                              </svg>
+                              </a>
+                        </div>
                     </div>
                 </div>
-                <!-----------Project-2-------->
-                <div class="work">
-                    <img src="./Images/work-2.png">
-                    <div class="layer">
-                        <h2 class="h2">Banggood | Clone</h2>
-                        <p class="p">Banggood is a Internation online selling service from China. A global leading direct-to-consumer online shop supplying consumer electronics, home appliance, tools, sports, clothing and much more.</p>
-                        <p class="mat">HTML&nbsp;|&nbsp;CSS&nbsp;|&nbsp;JAVASCRIPT&nbsp;|&nbsp;LOCAL STORAGE&nbsp;|&nbsp;DOM&nbsp;</p>    
-                        <a href="https://comfy-sfogliatella-222e46.netlify.app/">Website <i class="fa-solid fa-up-right-from-square"></i></a>
-                            <a href="https://github.com/ravipandeydu/banggood">Code <i class="fa-solid fa-code"></i></a>
+
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="./Images/work-3.png" alt="project">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h4 class="project-title">Online Shopping Application</h4>
+                        
+                        <p class="project-desc">Online shopping Application is a RESTful service where a client can perform CRUD operations on data and can receive the information from the server for this application.</p>
+                        <h6 class="project-sub-title">JAVA&nbsp;|&nbsp;Hibernate&nbsp;|&nbsp;SpringBoot&nbsp; |&nbsp;Mysql&nbsp;|&nbsp;JDBC&nbsp;</h6>
+                        <div class="buttons">
+                            <a href="https://github.com/gaurav7ingh/Online_Shopping_Application" target="_blank" class="primary-btn">Github<i class="fa-solid fa-code"></i></a>
+                            <a href="https://drive.google.com/file/d/1CTeKQ8u9vowsjTv0TV98B15g8E4zcFCr/view" target="_blank" class="primary-btn outline external-link"><span>Video</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                              </svg>
+                              </a>
+                        </div>
                     </div>
                 </div>
-                 <!-----------Project-3-------->
-                 <div class="work">
-                    <img src="https://user-images.githubusercontent.com/101389007/201761270-ec0b67cb-af65-43cc-9889-aa174bbe9306.png">
-                    <div class="layer">
-                        <h2 class="h2">Online Shopping Application</h2>
-                        <p class="p">Online shopping Application is a RESTful service where a client can perform CRUD operations on data and can receive the information from the server for this application.</p>
-                        <p class="mat">JAVA&nbsp;|&nbsp;Hibernate&nbsp;|&nbsp;SpringBoot&nbsp;|&nbsp;Mysql&nbsp;|&nbsp;JDBC&nbsp;</p>    
-                        <a href="https://drive.google.com/file/d/1CTeKQ8u9vowsjTv0TV98B15g8E4zcFCr/view">Video <i class="fa-solid fa-up-right-from-square"></i></a>
-                            <a href="https://github.com/gaurav7ingh/Online_Shopping_Application">Code <i class="fa-solid fa-code"></i></a>
+
+
+
+
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="./Images/work-2.png" alt="project">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h6 class="project-title">Banggood | Clone</h6>
+                        <p class="project-desc">Banggood is a Internation online selling service from China. A global leading direct-to-consumer online shop supplying consumer electronics, home appliance, tools, sports, clothing and much more.</p>
+                        <p class="project-sub-title">HTML&nbsp;|&nbsp;CSS&nbsp;|&nbsp;JAVASCRIPT&nbsp;|&nbsp;LOCAL STORAGE&nbsp;|&nbsp;DOM&nbsp;</p>
+                        <div class="buttons">
+                            <a href="https://github.com/ravipandeydu/banggood" target="_blank" class="primary-btn">Github<i class="fa-solid fa-code"></i></a>
+                            <a href="https://comfy-sfogliatella-222e46.netlify.app/" target="_blank" class="primary-btn outline external-link"><span>Preview</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                              </svg>
+                              </a>
+                        </div>
                     </div>
                 </div>
+
+
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="Images/work-4.png" alt="project">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h6 class="project-title">Online Cab Booking Application</h6>
+                        <p class="project-desc">Online Cab Booking Application is a RESTful service where a client can perform CRUD operations on data and can receive the information from the server for this application.</p>
+                        <p class="project-sub-title">JAVA&nbsp;|&nbsp;Hibernate&nbsp;|&nbsp;SpringBoot&nbsp; |&nbsp;Mysql&nbsp;|&nbsp;JDBC&nbsp;</p>
+                        <div class="buttons">
+                            <a href="https://github.com/Samrat-Sinha/Online-Cab-Booking-Application" target="_blank" class="primary-btn">Github<i class="fa-solid fa-code"></i></a>
+                            <a href="https://drive.google.com/file/d/1CTeKQ8u9vowsjTv0TV98B15g8E4zcFCr/view" target="_blank" class="primary-btn outline external-link"><span>Video</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                              </svg>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 
             </div>
-
-
         </div>
     </section>
+
 
    
       <!-- Github Stats -->
@@ -236,6 +333,9 @@
         </div>
     </section>
 
+     
+
+
 
 
     <!-- contact section start -->
@@ -244,7 +344,7 @@
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Get in Touch</div>
+                    <div class="text"></div>
                     <div class="icons">
                       <a href="https://github.com/Samrat-Sinha"><div class="row">
                         <i class="fa-brands fa-github"></i>
@@ -279,26 +379,7 @@
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                    <img src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/45dceb640723d72436c427add7966cf8.gif" alt="">
                 </div>
             </div>
         </div>
@@ -348,6 +429,28 @@
                    }
                 }).then(r => r.text())
             </script>
+          
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+          <script>
+
+            function sendEmail(){
+
+                    Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "smrtsnh1995@gmail.com",
+                    Password : "password",
+                    To : 'them@website.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact From Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+
+          </script>
+
 
 </body>
 </html>
