@@ -43,7 +43,7 @@ $(document).ready(function(){
 });
 
 function openNewWindow(){
-    window.open('https://drive.google.com/file/d/1QeUr0kE4-p5grzdzho53wLmz-tspHhMq/view?usp=sharing');
+    window.open('https://drive.google.com/file/d/1G8trG48dhDqASr_IvyjN7oYtE8OC1_dC/view?usp=sharing');
 }
 
 
